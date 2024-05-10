@@ -6,9 +6,9 @@
 
   <p class="mb-0">Kategori</p>
   <div class="btn-group mb-3">
-    <a href="<?= site_url('buku') ?>" class="btn btn-light">Semua</a>
+    <a href="<?= site_url('buku') ?>" class="btn btn-sm btn-outline-primary">Semua</a>
     <?php foreach ($kategori as $k) : ?>
-      <a href="<?= site_url('buku?kategori=' . $k->id) ?>" class="btn btn-light"><?= $k->nama ?></a>
+      <a href="<?= site_url('buku?kategori=' . $k->id) ?>" class="btn btn-sm btn-outline-primary"><?= $k->nama ?></a>
     <?php endforeach ?>
   </div>
 

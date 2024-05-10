@@ -11,7 +11,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-white border-bottom border-dark">
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
     <div class="container">
       <a class="navbar-brand" href="#">Perpus Sismul</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,6 +24,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link <?php if (explode('/', current_url())[4] == explode('/', site_url('kategori'))[4]) : ?>active<?php endif ?>" href="<?= site_url('kategori') ?>">Kategori</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <?php if (explode('/', current_url())[4] == explode('/', site_url('tentang-kami'))[4]) : ?>active<?php endif ?>" href="<?= site_url('tentang-kami') ?>">Tentang Kami</a>
           </li>
         </ul>
       </div>
